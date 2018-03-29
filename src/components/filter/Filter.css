@@ -1,0 +1,16 @@
+.filter {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.filter .input {
+  font-size: 1.4rem;
+  flex-grow: 1;
+  padding: 3px 8px;
+  border: none;
+}
+
+.filter-button {
+  margin-right: 2px;
+}

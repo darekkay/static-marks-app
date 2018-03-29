@@ -1,0 +1,31 @@
+@media print {
+  main {
+    top: 0;
+  }
+
+  .scrollable-y {
+    height: auto;
+  }
+
+  .collection {
+    margin: 0;
+    border: none;
+  }
+
+  .bookmark-row .link {
+    color: inherit;
+  }
+
+  .bookmark-row .link:after {
+    content: " (" attr(href) ") ";
+    font-size: 1.2rem;
+    font-weight: normal;
+    white-space: pre-wrap;
+  }
+
+  header,
+  footer,
+  .bucket-header .btn {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.collection {
+  margin: 1rem 0;
+  padding: 1rem;
+
+  background-color: white;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (min-width: 481px) {
+  .collection {
+    margin: 1rem;
+    border: 1px solid #ccc;
+  }
+}
+
+.collection-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.buckets {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 481px) {
+  .buckets {
+    flex-direction: row;
+  }
+}

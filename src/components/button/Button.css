@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  opacity: 0.8;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  cursor: initial;
+  opacity: 1;
+}
+
+.btn .label {
+  margin-left: 1rem;
+}

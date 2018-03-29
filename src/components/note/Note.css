@@ -1,0 +1,14 @@
+.note {
+  padding-left: 15px;
+  font-size: 1.4rem;
+}
+
+.note::before {
+  content: "\25AA";
+  margin-right: 10px;
+}
+
+.note,
+.note .link {
+  white-space: normal;
+}

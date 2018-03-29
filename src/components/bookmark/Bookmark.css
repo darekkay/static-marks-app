@@ -1,0 +1,31 @@
+.bookmark-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.bookmark-row .link {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookmark-row .icon-bookmark {
+  top: 2px;
+}
+
+.bookmark-row:hover .icon-bookmark {
+  opacity: 0.9;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48cGF0aCBkPSJNMCA1MTJWNDhDMCAyMS40OSAyMS40OSAwIDQ4IDBoMjg4YzI2LjUxIDAgNDggMjEuNDkgNDggNDh2NDY0TDE5MiA0MDAgMCA1MTJ6Ii8+PC9zdmc+");
+}
+
+.bookmark-row .button-expand {
+  margin-left: auto;
+  margin-top: 3px;
+}
+
+.bookmark-row .button-expand.expanded .icon {
+  transform: rotate(180deg);
+}

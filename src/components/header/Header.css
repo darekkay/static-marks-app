@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+header .menu {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+header .logo {
+  display: none;
+
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: default;
+}
+
+@media screen and (min-width: 481px) {
+  header .logo {
+    display: block;
+  }
+}

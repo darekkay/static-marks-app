@@ -1,0 +1,30 @@
+{
+  "name": "static-marks-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "faker": "4.1.0",
+    "inline-source": "6.1.4",
+    "prop-types": "15.6.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.1.4",
+    "why-did-you-update": "0.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "prettier": "1.12.1"
+  },
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build && node scripts/inline-sources.js",
+    "format": "prettier --write -- \"{src,public}/**/*.{js,jsx,json,css}\"",
+    "inline-sources": "node scripts/inline-sources.js",
+    "lint": "eslint --fix \"src/**/*.js\" \"src/**/*.jsx\"",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  }
+}

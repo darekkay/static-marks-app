@@ -1,0 +1,50 @@
+.bucket {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 481px) {
+  .bucket {
+    max-width: 300px;
+    margin: 0.5rem;
+  }
+}
+
+.bucket-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #dedede;
+  background-color: #f7f7f9;
+  font-weight: bold;
+}
+
+.bucket-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.bucket-header .btn {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.bucket-title {
+  cursor: default;
+  font: inherit;
+  margin: 0;
+}
+
+.bucket-block {
+  flex: 1 1 auto;
+  padding: 0.75rem;
+}

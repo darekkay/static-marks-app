@@ -1,0 +1,31 @@
+main {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 481px) {
+  main {
+    bottom: 35px;
+  }
+}
+
+.scrollable-y {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.no-results {
+  display: none;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+  color: #333;
+  text-align: center;
+  cursor: default;
+}
+
+.collections:empty ~ .no-results {
+  display: block;
+}
