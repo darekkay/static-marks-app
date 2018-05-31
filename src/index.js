@@ -8,7 +8,7 @@ import App from "./App";
 import "./print.css";
 // import registerServiceWorker from './registerServiceWorker';
 
-import loadBookmarks from "./utils/bookmarks-loader";
+import loadConfig from "./utils/config-loader";
 
 // why-did-you-update
 if (process.env.NODE_ENV === "development") {
@@ -21,12 +21,12 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
-const projects = loadBookmarks();
+const { projects, title } = loadConfig();
 const projectKeys = projects.map(project => project.key);
 
 ReactDOM.render(
   <HashRouter>
-    <App projects={projects} projectKeys={projectKeys} />
+    <App projects={projects} projectKeys={projectKeys} title={title} />
   </HashRouter>,
   document.getElementById("root")
 );

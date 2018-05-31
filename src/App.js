@@ -21,7 +21,8 @@ class App extends Component {
   };
 
   renderTitle = key => {
-    document.title = `${key === undefined ? "" : `${key} | `}Bookmarks`;
+    const prefix = key === undefined ? "" : `${key} | `;
+    document.title = `${prefix}${this.props.title}`;
   };
 
   renderCollections = key => {
