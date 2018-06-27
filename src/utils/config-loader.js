@@ -1,6 +1,5 @@
 // Bookmarks and config in stored in a global "window.staticmarks" variable
 // This makes it possible to add them at runtime, after the project was built
-
 const loadProjects = () => {
   if (window.staticmarks) {
     return window.staticmarks.bookmarks;
@@ -13,9 +12,16 @@ const loadProjects = () => {
   return [];
 };
 
+// Enable linking to a search result, e.g. for browser search engines
+const loadQueryParameter = param => {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(param);
+};
+
 const loadConfig = () => ({
   projects: loadProjects(),
-  title: window.staticmarks ? window.staticmarks.title : "Static Marks"
+  title: window.staticmarks ? window.staticmarks.title : "Static Marks",
+  filter: loadQueryParameter("search") || ""
 });
 
 export default loadConfig;

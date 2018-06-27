@@ -21,12 +21,17 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
-const { projects, title } = loadConfig();
+const { projects, title, filter } = loadConfig();
 const projectKeys = projects.map(project => project.key);
 
 ReactDOM.render(
   <HashRouter>
-    <App projects={projects} projectKeys={projectKeys} title={title} />
+    <App
+      projects={projects}
+      projectKeys={projectKeys}
+      title={title}
+      filter={filter}
+    />
   </HashRouter>,
   document.getElementById("root")
 );
