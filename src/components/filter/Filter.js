@@ -49,7 +49,7 @@ class Filter extends PureComponent {
   render() {
     const { currentValue } = this.props;
     return (
-      <div className="filter">
+      <div className="filter" role="search">
         <Button
           className="filter-button"
           label="Clear filter"
