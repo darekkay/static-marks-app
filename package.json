@@ -25,10 +25,12 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build && node scripts/inline-sources.js",
+    "ci": "npm run lint:check && npm run test",
     "format": "prettier --write -- \"{src,public}/**/*.{js,jsx,json,css}\"",
     "inline-sources": "node scripts/inline-sources.js",
-    "lint": "eslint --fix \"src/**/*.js\" \"src/**/*.jsx\"",
+    "lint:check": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
     "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom --modulePaths=src"
   }
 }
