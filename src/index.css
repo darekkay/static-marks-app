@@ -25,9 +25,20 @@ a:hover,
 a:focus {
   color: #005aff;
 }
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
+}
+
+noscript {
+  display: block;
+  margin: 4rem auto;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
