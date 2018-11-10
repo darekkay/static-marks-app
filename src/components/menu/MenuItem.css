@@ -1,6 +1,7 @@
 .menu-item {
   display: flex;
   align-items: center;
+  margin-bottom: 0.8rem;
 }
 
 .menu-item .icon {

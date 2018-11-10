@@ -1,20 +1,20 @@
 .menu {
   position: relative;
-  z-index: 200;
 }
 
 .dropdown {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 39px;
+  bottom: 0;
+  padding: 20px 30px;
 
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: calc(100vh - 50px);
 
   background-color: white;
-  border: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 
   animation: slide-in-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -27,7 +27,7 @@
 
 @keyframes slide-in-top {
   0% {
-    transform: translateY(-50px);
+    transform: translateX(-100px);
   }
   100% {
     transform: translateY(0);
