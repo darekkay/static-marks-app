@@ -1,12 +1,13 @@
 import React, { PureComponent } from "react";
+import cn from "classnames";
 
-import Button from "../../components/button/Button";
+import Hamburger from "../../components/hamburger/Hamburger";
 import "./Menu.css";
 
 class Menu extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { open: false };
+    this.state = { open: false, firstRender: true };
   }
 
   componentDidMount() {
@@ -17,8 +18,12 @@ class Menu extends PureComponent {
     document.removeEventListener("click", this.onDocumentClick);
   }
 
-  showMenu = () => {
-    this.setState(() => ({ open: true }));
+  toggleMenuVisible = () => {
+    this.setState(prevState => ({ open: !prevState.open, firstRender: false }));
+  };
+
+  hideMenu = () => {
+    this.setState({ open: false });
   };
 
   onDocumentClick = event => {
@@ -29,12 +34,13 @@ class Menu extends PureComponent {
       !target.matches(".icon-times")
     ) {
       while (target !== null) {
-        if (target.matches(".menu")) return false; // don't close, if the menu or its child was pressed
+        if (target.matches(".menu")) return false; // don't handle closing, if the menu or its child was pressed
+
         target = target.parentElement;
       }
     }
 
-    this.setState({ open: false });
+    this.hideMenu();
   };
 
   render() {
@@ -42,27 +48,21 @@ class Menu extends PureComponent {
 
     return (
       <div className="menu">
-        <Button
-          onClick={this.showMenu}
+        <Hamburger
+          onClick={this.toggleMenuVisible}
           label="Show projects"
-          icon="bars"
-          aria-haspopup="menu"
-          aria-expanded={this.state.open}
+          active={this.state.open}
         >
           Projects
-        </Button>
+        </Hamburger>
 
-        {this.state.open && (
-          <div className="dropdown" role="menu">
-            {children}
-            <Button
-              className="close-button"
-              onClick={this.showMenu}
-              label="Close"
-              icon="times"
-            />
-          </div>
-        )}
+        <div
+          className={cn("dropdown", { closed: !this.state.open })}
+          role="menu"
+          hidden={this.state.firstRender}
+        >
+          {children}
+        </div>
       </div>
     );
   }

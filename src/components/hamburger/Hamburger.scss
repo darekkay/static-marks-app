@@ -1,0 +1,66 @@
+.hamburger {
+  // Based on: https://codepen.io/stevenfabre/pen/LGvzk
+
+  $color: #525657;
+
+  $height-icon: 10px;
+  $width-line: 20px;
+  $height-line: 2px;
+  $margin-top: -1px;
+
+  $transition-time: 0.4s;
+  $rotation: 45deg;
+  $translateY: ($height-icon / 2);
+  $translateX: 0;
+
+  width: $width-line;
+  height: $height-icon;
+  position: relative;
+  top: $margin-top;
+  display: block;
+
+  .line {
+    display: block;
+    background: $color;
+    width: $width-line;
+    height: $height-line;
+    position: absolute;
+    left: 0;
+    border-radius: ($height-line / 2);
+    transition: all $transition-time;
+    -webkit-transition: all $transition-time;
+    -moz-transition: all $transition-time;
+
+    &.line-1 {
+      top: 0;
+    }
+    &.line-2 {
+      top: 50%;
+    }
+    &.line-3 {
+      top: 100%;
+    }
+  }
+
+  &.active {
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -webkit-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -moz-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -webkit-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -moz-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+    }
+  }
+}
