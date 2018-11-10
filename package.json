@@ -1,26 +1,30 @@
 {
   "name": "static-marks-app",
   "version": "1.0.0",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "dependencies": {
     "classnames": "2.2.6",
     "faker": "4.1.0",
-    "inline-source": "6.1.5",
+    "inline-source": "6.1.8",
     "prop-types": "15.6.2",
-    "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react": "16.6.1",
+    "react-dom": "16.6.1",
     "react-router-dom": "4.3.1",
-    "react-scripts": "1.1.4",
-    "why-did-you-update": "0.1.1"
+    "react-scripts": "2.1.1",
+    "why-did-you-update": "1.0.5"
   },
   "devDependencies": {
-    "babel-eslint": "7.2.3",
-    "eslint": "4.19.1",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-prettier": "2.6.0",
-    "eslint-plugin-react": "7.9.1",
-    "prettier": "1.13.5"
+    "eslint-config-prettier": "3.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-prettier": "3.0.0",
+    "eslint-plugin-react": "7.11.1",
+    "prettier": "1.15.1"
   },
   "private": true,
   "scripts": {

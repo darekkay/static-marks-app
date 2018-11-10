@@ -38,19 +38,17 @@ class Bookmark extends PureComponent {
           )}
         </div>
 
-        {notes &&
-          this.state.expanded && (
-            <div className="notes">
-              {notes.map(
-                (note, index) =>
-                  typeof note === "string" ? (
-                    <Note key={index} title={note} />
-                  ) : (
-                    <Note key={index} title={note.title} url={note.url} />
-                  )
-              )}
-            </div>
-          )}
+        {notes && this.state.expanded && (
+          <div className="notes">
+            {notes.map((note, index) =>
+              typeof note === "string" ? (
+                <Note key={index} title={note} />
+              ) : (
+                <Note key={index} title={note.title} url={note.url} />
+              )
+            )}
+          </div>
+        )}
       </div>
     );
   }

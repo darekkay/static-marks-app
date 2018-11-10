@@ -1,20 +1,12 @@
 {
-  "extends": [
-    "react-app",
-    "prettier"
-    ],
+  "extends": ["react-app", "prettier"],
   "env": {
     "browser": true,
     "es6": true,
     "jest": true,
     "node": true
   },
-  "plugins": [
-    "import",
-    "jsx-a11y",
-    "prettier",
-    "react"
-  ],
+  "plugins": ["import", "jsx-a11y", "prettier", "react"],
   "root": true,
   "rules": {
     "linebreak-style": "off",
