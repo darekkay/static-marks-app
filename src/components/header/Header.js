@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { withRouter } from "react-router-dom";
 
 import Menu from "../menu/Menu";
 import MenuItem from "../menu/MenuItem";
@@ -17,7 +18,7 @@ class Header extends PureComponent {
           // Display project selection only for more than 1 projects
           <Menu>
             <MenuItem
-              projectKey="/"
+              route="/"
               title="all"
               icon="clone"
               onClick={clearFilterOnProjectChange}
@@ -25,6 +26,7 @@ class Header extends PureComponent {
             {projectKeys.map(projectKey => (
               <MenuItem
                 key={projectKey}
+                route={`/${projectKey}`}
                 projectKey={projectKey}
                 onClick={clearFilterOnProjectChange}
               />
@@ -38,4 +40,4 @@ class Header extends PureComponent {
   }
 }
 
-export default Header;
+export default withRouter(Header);
