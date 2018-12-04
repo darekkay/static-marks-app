@@ -7,7 +7,7 @@ const wordRegex = /\S+/g;
 const emptyArray = [];
 
 class Collection extends PureComponent {
-  filteredLinks = (bucket, filter) => {
+  filteredLinks = (title, bucket, filter) => {
     if (!filter) return bucket.links;
 
     const words = (filter.match(wordRegex) || emptyArray).map(word =>
@@ -18,6 +18,7 @@ class Collection extends PureComponent {
       // All filter terms need to be included in the bucket, bookmark or note title
       words.every(
         word =>
+          title.toLowerCase().includes(word) ||
           link.title.toLowerCase().includes(word) ||
           bucketTitle.includes(word) ||
           (link.notes &&
@@ -30,7 +31,7 @@ class Collection extends PureComponent {
     const { title, buckets, filter } = this.props;
 
     const filteredBuckets = buckets.map((bucket, index) => {
-      const filteredLinks = this.filteredLinks(bucket, filter);
+      const filteredLinks = this.filteredLinks(title, bucket, filter);
       return (
         filteredLinks.length > 0 && (
           <Bucket
