@@ -36,6 +36,7 @@ class App extends Component {
               <Collection
                 key={collection.title}
                 title={collection.title}
+                source={set.key}
                 buckets={collection.buckets}
                 filter={this.state.filter}
               />

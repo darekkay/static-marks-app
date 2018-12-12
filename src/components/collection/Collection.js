@@ -28,7 +28,7 @@ class Collection extends PureComponent {
   };
 
   render() {
-    const { title, buckets, filter } = this.props;
+    const { title, buckets, filter, source } = this.props;
 
     const filteredBuckets = buckets.map((bucket, index) => {
       const filteredLinks = this.filteredLinks(title, bucket, filter);
@@ -49,7 +49,9 @@ class Collection extends PureComponent {
 
     return (
       <div className="collection">
-        <h2 className="collection-title">{title}</h2>
+        <h2 className="collection-title" title={source}>
+          {title}
+        </h2>
         <div className="buckets">{filteredBuckets}</div>
       </div>
     );
