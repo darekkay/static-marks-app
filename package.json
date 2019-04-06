@@ -1,6 +1,6 @@
 {
   "name": "static-marks-app",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "browserslist": [
     ">0.2%",
     "not dead",
