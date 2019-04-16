@@ -23,3 +23,10 @@
 
 - Private Bookmarks dürfen nicht in die Cloud geraten
 - Bookmarks auf GitHub, GoogleDrive, Dropbox etc. halten und pflegen → Über WebHooks automatisch bauen lassen
+
+## Build
+
+1. Update version of `app` and `cli`.
+2. Run `npm run build` for `app`.
+3. Generate demo examples.
+4. ...
