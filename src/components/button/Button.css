@@ -4,6 +4,7 @@
   justify-content: center;
 
   background-color: transparent;
+  color: inherit;
   border: none;
   cursor: pointer;
 }
