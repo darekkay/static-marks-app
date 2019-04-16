@@ -6,7 +6,7 @@ import "./MenuItem.css";
 
 class MenuItem extends PureComponent {
   render() {
-    const { projectKey, route, title, icon, onClick } = this.props;
+    const { projectKey, route, title, icon, tabIndex, onClick } = this.props;
 
     return (
       <div className="menu-item">
@@ -16,6 +16,7 @@ class MenuItem extends PureComponent {
           activeClassName="active"
           role="menuitem"
           onClick={onClick}
+          tabIndex={tabIndex}
         >
           <Icon name={icon || "folder"} position="left" />
           {title || projectKey}

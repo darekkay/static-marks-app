@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import cn from "classnames";
 
 import Hamburger from "../../components/hamburger/Hamburger";
+import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 class Menu extends PureComponent {
@@ -44,7 +45,7 @@ class Menu extends PureComponent {
   };
 
   render() {
-    const { children } = this.props;
+    const { items } = this.props;
 
     return (
       <div className="menu">
@@ -60,8 +61,15 @@ class Menu extends PureComponent {
           className={cn("dropdown", { closed: !this.state.open })}
           role="menu"
           hidden={this.state.firstRender}
+          aria-hidden={!this.state.open}
         >
-          {children}
+          {items.map(item => (
+            <MenuItem
+              key={item.route}
+              tabIndex={this.state.open ? 0 : -1}
+              {...item}
+            />
+          ))}
         </div>
       </div>
     );
