@@ -28,5 +28,6 @@
 
 1. Update version of `app` and `cli`.
 2. Run `npm run build` for `app`.
-3. Generate demo examples.
-4. ...
+3. Update Changelog
+4. npm publish
+5. Make GitHub Release
