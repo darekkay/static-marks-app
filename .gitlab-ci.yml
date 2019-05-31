@@ -1,6 +1,6 @@
 # Official framework image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/node/tags/
-image: node:8
+image: node:10
 
 stages:
   - test
@@ -9,12 +9,14 @@ stages:
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
 cache:
   paths:
-  - node_modules/
+    - node_modules/
+    - .yarn
 
 before_script:
-  - npm install
+  - yarn config set cache-folder .yarn
+  - yarn install
 
 test:
   stage: test
   script:
-  - npm run ci
+    - yarn ci

@@ -10,23 +10,23 @@
   "dependencies": {
     "classnames": "2.2.6",
     "faker": "4.1.0",
-    "inline-source": "6.1.9",
+    "inline-source": "6.1.10",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "3.0.1",
     "why-did-you-update": "1.0.6"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-plugin-import": "2.16.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-import": "2.17.3",
     "eslint-plugin-jsx-a11y": "6.2.1",
-    "eslint-plugin-prettier": "3.0.1",
-    "eslint-plugin-react": "7.12.4",
-    "node-sass": "4.11.0",
-    "prettier": "1.16.4"
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.13.0",
+    "node-sass": "4.12.0",
+    "prettier": "1.17.1"
   },
   "private": true,
   "scripts": {

@@ -1,14 +1,26 @@
 ### Node.js ###
 
 /node_modules
-.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
 
 ### IDE ###
 
 /.idea
 *.iml
 
+
 ### App ###
 
 /build
+/coverage
+.env*.local
+
+
+### Misc ###
+
 *.log
+.DS_Store
