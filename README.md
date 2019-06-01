@@ -29,5 +29,6 @@
 1. Update version of `app` and `cli`.
 2. Run `npm run build` for `app`.
 3. Update Changelog
-4. npm publish
-5. Make GitHub Release
+4. Update version in template
+5. npm publish
+6. Make GitHub Release
