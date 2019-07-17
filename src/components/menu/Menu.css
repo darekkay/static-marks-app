@@ -58,3 +58,14 @@
     transform: translateX(-100%);
   }
 }
+
+
+.menu .label {
+  display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .menu .label {
+    display: block;
+  }
+}
