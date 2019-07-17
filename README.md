@@ -27,7 +27,7 @@
 ## Build
 
 1. Update version of `app` and `cli`.
-2. Run `npm run build` for `app`.
+2. Run `yarn build` for `app`.
 3. Update Changelog
 4. Update version in template
 5. npm publish
