@@ -1,3 +1,7 @@
+# Static Marks - App
+
+This is the frontend part of the [Static Marks](https://github.com/darekkay/static-marks) project. Please view the main repository for more information.
+
 ## Terms
 
 - Project: List of collections, defined in a single file
@@ -19,11 +23,6 @@
 
 - Chrome doesn't allow opening [multiple links at once](https://stackoverflow.com/questions/16749907/window-open-behaviour-in-chrome-tabs-windows).
  
-## Brainstorming
-
-- Private Bookmarks dürfen nicht in die Cloud geraten
-- Bookmarks auf GitHub, GoogleDrive, Dropbox etc. halten und pflegen → Über WebHooks automatisch bauen lassen
-
 ## Build
 
 1. Update version of `app` and `cli`.
