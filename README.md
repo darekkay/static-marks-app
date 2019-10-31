@@ -29,5 +29,6 @@ This is the frontend part of the [Static Marks](https://github.com/darekkay/stat
 2. Run `yarn build` for `app`.
 3. Update Changelog
 4. Update version in template
-5. npm publish
-6. Make GitHub Release
+5. Make sure no CRLF line endings are used in CLI files.
+6. npm publish
+7. Make GitHub Release
