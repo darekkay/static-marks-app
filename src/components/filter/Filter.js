@@ -64,6 +64,7 @@ class Filter extends PureComponent {
           placeholder="Search everywhere..."
           aria-label="Search everywhere"
           onChange={this.handleChange}
+          type="search"
         />
       </div>
     );
