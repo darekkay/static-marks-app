@@ -32,7 +32,7 @@ class Header extends PureComponent {
           />
         )}
         <Filter onFilter={onFilter} currentValue={currentFilter} />
-        <div className="logo">Static Marks</div>
+        <h1 className="logo">Static Marks</h1>
       </header>
     );
   }
