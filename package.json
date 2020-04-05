@@ -8,23 +8,23 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@welldone-software/why-did-you-render": "4.0.6",
     "classnames": "2.2.6",
     "faker": "4.1.0",
     "inline-source": "7.2.0",
     "prop-types": "15.7.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.0",
-    "why-did-you-update": "1.0.8"
+    "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "cross-env": "7.0.1",
-    "eslint-config-prettier": "6.10.0",
-    "eslint-plugin-import": "2.20.1",
+    "cross-env": "7.0.2",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-prettier": "3.1.2",
-    "eslint-plugin-react": "7.18.3",
+    "eslint-plugin-react": "7.19.0",
     "node-sass": "4.13.1",
     "prettier": "1.19.1"
   },

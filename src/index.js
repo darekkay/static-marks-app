@@ -10,11 +10,12 @@ import "./print.css";
 
 import loadConfig from "./utils/config-loader";
 
-// why-did-you-update
+// why-did-you-render
 if (process.env.NODE_ENV === "development") {
   // eslint-disable-next-line global-require
-  const { whyDidYouUpdate } = require("why-did-you-update");
-  whyDidYouUpdate(React, {
+  const whyDidYouRender = require("@welldone-software/why-did-you-render");
+  whyDidYouRender(React, {
+    trackAllPureComponents: true,
     exclude: [
       /^Route/ // React Router
     ]
