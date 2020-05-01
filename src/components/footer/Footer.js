@@ -16,7 +16,7 @@ const Footer = () => (
           <Link url="https://github.com/darekkay/static-marks">
             Static Marks
           </Link>
-          <span> v{process.env.REACT_APP_VERSION}</span>
+          <span> {process.env.REACT_APP_VERSION}</span>
         </span>
       )}
     </div>
