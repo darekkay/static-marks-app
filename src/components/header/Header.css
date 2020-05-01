@@ -1,20 +1,29 @@
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  padding-left: 10px;
-  padding-right: 10px;
   height: 60px;
   z-index: 100;
 
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+header .bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 header .menu {

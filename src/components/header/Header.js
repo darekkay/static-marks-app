@@ -13,26 +13,28 @@ class Header extends PureComponent {
     const clearFilterOnProjectChange = () => onFilter("");
     return (
       <header>
-        {projectKeys.length > 1 && (
-          // Display project selection only for more than 1 projects
-          <Menu
-            items={[
-              {
-                route: "/",
-                title: "all",
-                icon: "clone",
-                onClick: clearFilterOnProjectChange
-              },
-              ...projectKeys.map(projectKey => ({
-                route: `/${projectKey}`,
-                projectKey,
-                onClick: clearFilterOnProjectChange
-              }))
-            ]}
-          />
-        )}
-        <Filter onFilter={onFilter} currentValue={currentFilter} />
-        <h1 className="logo">Static Marks</h1>
+        <div className="bar">
+          {projectKeys.length > 1 && (
+            // Display project selection only for more than 1 projects
+            <Menu
+              items={[
+                {
+                  route: "/",
+                  title: "all",
+                  icon: "clone",
+                  onClick: clearFilterOnProjectChange
+                },
+                ...projectKeys.map(projectKey => ({
+                  route: `/${projectKey}`,
+                  projectKey,
+                  onClick: clearFilterOnProjectChange
+                }))
+              ]}
+            />
+          )}
+          <Filter onFilter={onFilter} currentValue={currentFilter} />
+          <h1 className="logo">Static Marks</h1>
+        </div>
       </header>
     );
   }
