@@ -22,10 +22,13 @@ class Bookmark extends PureComponent {
     return (
       <div className="bookmark">
         <div className="bookmark-row">
-          <Link title={title} url={url}>
-            <Icon name="bookmark" position="left" />
-            {title}
-          </Link>
+          {!!url && (
+            <Link title={title} url={url}>
+              <Icon name="bookmark" position="left" />
+              {title}
+            </Link>
+          )}
+          {!url && <div>{title}</div>}
 
           {notes && (
             <Button
