@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 
+import Icon from "../icon/Icon";
 import Bucket from "../bucket/Bucket";
 import "./Collection.scss";
 
@@ -50,7 +51,7 @@ class Collection extends PureComponent {
     return (
       <div className="collection">
         <h2 className="collection-title" title={source}>
-          {title}
+          <Icon name="collection" position="left" /> <span>{title}</span>
         </h2>
         <div className="buckets">{filteredBuckets}</div>
       </div>
