@@ -13,7 +13,7 @@ class Header extends PureComponent {
     const clearFilterOnProjectChange = () => onFilter("");
     return (
       <header>
-        <div className="bar">
+        <div className="header-inner">
           <Filter onFilter={onFilter} currentValue={currentFilter} />
 
           {projectKeys.length > 1 && (
