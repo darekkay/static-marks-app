@@ -2,10 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 
-import "./index.css";
 import "./polyfills";
+
+import "./styles/index.scss";
+import "./print.scss";
+
 import App from "./App";
-import "./print.css";
+
 // import registerServiceWorker from './registerServiceWorker';
 
 import loadConfig from "./utils/config-loader";

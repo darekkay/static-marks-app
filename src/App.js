@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Collection from "./components/collection/Collection";
-import "./App.css";
+import "./App.scss";
 
 class App extends Component {
   constructor(props) {

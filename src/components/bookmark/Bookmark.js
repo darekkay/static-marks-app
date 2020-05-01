@@ -5,7 +5,7 @@ import Note from "../note/Note";
 import Link from "../link/Link";
 import Icon from "../icon/Icon";
 import Button from "../button/Button";
-import "./Bookmark.css";
+import "./Bookmark.scss";
 
 class Bookmark extends PureComponent {
   constructor(props) {

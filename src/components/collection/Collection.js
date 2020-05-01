@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 
 import Bucket from "../bucket/Bucket";
-import "./Collection.css";
+import "./Collection.scss";
 
 const wordRegex = /\S+/g;
 const emptyArray = [];

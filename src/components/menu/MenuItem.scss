@@ -1,3 +1,5 @@
+@import "~@darekkay/styles/src/base/colors";
+
 .menu-item {
   display: flex;
   align-items: center;
@@ -10,13 +12,13 @@
 .menu-item a {
   color: inherit;
   width: 100%;
-  padding: 8px 25px;
+  padding: 5px 25px;
   white-space: nowrap;
 }
 
 .menu-item a:hover {
   text-decoration: none;
-  background-color: #f5f6f7; /* gray-cool-3 */
+  background-color: $gray-cool-3;
 }
 
 .menu-item a.active {

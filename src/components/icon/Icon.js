@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import cn from "classnames";
 
-import "./Icon.css";
+import "./Icon.scss";
 
 class Icon extends PureComponent {
   render() {

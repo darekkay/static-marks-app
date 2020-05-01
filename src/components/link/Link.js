@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import "./Link.css";
+import "./Link.scss";
 
 class Link extends Component {
   static propTypes = {

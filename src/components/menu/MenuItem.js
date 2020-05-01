@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import { NavLink } from "react-router-dom";
 
 import Icon from "../../components/icon/Icon";
-import "./MenuItem.css";
+import "./MenuItem.scss";
 
 class MenuItem extends PureComponent {
   render() {

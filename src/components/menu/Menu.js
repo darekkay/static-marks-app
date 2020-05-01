@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import Hamburger from "../../components/hamburger/Hamburger";
 import MenuItem from "./MenuItem";
-import "./Menu.css";
+import "./Menu.scss";
 
 class Menu extends PureComponent {
   constructor(props) {

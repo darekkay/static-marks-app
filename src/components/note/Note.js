@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 
 import Link from "../link/Link";
-import "./Note.css";
+import "./Note.scss";
 
 class Note extends PureComponent {
   render() {

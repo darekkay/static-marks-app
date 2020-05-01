@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import cn from "classnames";
 
 import Icon from "../icon/Icon";
-import "./Button.css";
+import "./Button.scss";
 
 class Button extends PureComponent {
   render() {

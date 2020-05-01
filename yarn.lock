@@ -1765,6 +1765,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
+"@darekkay/styles@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-1.0.5.tgz#38a12eb52e516a13e4fe6132dcaa456c044c91ca"
+  integrity sha512-QXwXSK98jejTb/WNVpmvqCKxD6D+q9jiTOieEEgk59AbEou2VbmJ4ZvbiNKSz7vRkBUF97MerBCxbQH+8N6TyQ==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"

@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import Menu from "../menu/Menu";
 import Filter from "../filter/Filter";
 
-import "./Header.css";
+import "./Header.scss";
 
 class Header extends PureComponent {
   render() {

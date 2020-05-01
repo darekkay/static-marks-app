@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 
 import Bookmark from "../bookmark/Bookmark";
 import Button from "../button/Button";
-import "./Bucket.css";
+import "./Bucket.scss";
 
 class Bucket extends PureComponent {
   openAllLinks = () => {

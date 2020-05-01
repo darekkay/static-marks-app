@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import cn from "classnames";
 
 import Button from "../button/Button";
-import "./Filter.css";
+import "./Filter.scss";
 
 class Filter extends PureComponent {
   componentDidMount() {
