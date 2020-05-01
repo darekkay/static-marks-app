@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import cl from "classnames";
+import cn from "classnames";
 
 import Note from "../note/Note";
 import Link from "../link/Link";
@@ -29,7 +29,7 @@ class Bookmark extends PureComponent {
 
           {notes && (
             <Button
-              className={cl("button-expand", { expanded: this.state.expanded })}
+              className={cn("button-expand", { expanded: this.state.expanded })}
               onClick={this.toggleExpanded}
               icon="angle-down"
               label={this.state.expanded ? "Close notes" : "Open notes"}

@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import cl from "classnames";
+import cn from "classnames";
 
 import "./Hamburger.scss";
 
@@ -15,7 +15,7 @@ class Hamburger extends PureComponent {
         aria-expanded={active}
         {...rest}
       >
-        <span className={cl("hamburger", { active })}>
+        <span className={cn("hamburger", { active })}>
           <span className="line line-1" />
           <span className="line line-2" />
           <span className="line line-3" />

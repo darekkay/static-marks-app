@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import cl from "classnames";
+import cn from "classnames";
 
 import "./Icon.css";
 
@@ -8,7 +8,7 @@ class Icon extends PureComponent {
     const { name, position } = this.props;
     return (
       <div
-        className={cl("icon", `icon-${name}`, {
+        className={cn("icon", `icon-${name}`, {
           [`icon-${position}`]: position
         })}
       />
