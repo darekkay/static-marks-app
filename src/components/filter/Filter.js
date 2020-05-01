@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import cn from "classnames";
 
 import Button from "../button/Button";
 import "./Filter.css";
@@ -50,14 +51,14 @@ class Filter extends PureComponent {
     const { currentValue } = this.props;
     return (
       <div className="filter" role="search">
-        <Button
-          className="filter-button"
-          label="Clear filter"
-          disabled={!currentValue}
-          onClick={this.handleFilterButtonClicked}
-          icon={(currentValue && "times") || "search"}
-        />
-
+        <div className={cn("filter-button", { empty: !currentValue })}>
+          <Button
+            label="Clear filter"
+            disabled={!currentValue}
+            onClick={this.handleFilterButtonClicked}
+            icon={(currentValue && "times") || "search"}
+          />
+        </div>
         <input
           className="input"
           value={currentValue}
