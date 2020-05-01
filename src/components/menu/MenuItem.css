@@ -1,7 +1,6 @@
 .menu-item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.8rem;
 }
 
 .menu-item .icon {
@@ -9,8 +8,15 @@
 }
 
 .menu-item a {
+  color: inherit;
   width: 100%;
+  padding: 8px 25px;
   white-space: nowrap;
+}
+
+.menu-item a:hover {
+  text-decoration: none;
+  background-color: #f5f6f7; /* gray-cool-3 */
 }
 
 .menu-item a.active {

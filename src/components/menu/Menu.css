@@ -18,18 +18,28 @@
 
 .dropdown {
   position: fixed;
-  right: 0;
-  top: 60px;
-  bottom: 35px;
-  padding: 20px 30px;
+  right: 6px;
+  top: 55px;
+  padding: 8px 0;
+  min-width: 250px;
+  max-height: calc(100% - 80px);
 
   overflow-y: auto;
   overflow-x: hidden;
 
   background-color: white;
-  border-left: 1px solid #ccc;
 
-  animation: slide-in-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  animation: fade-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media screen and (min-width: 1201px) {
+  .dropdown {
+    right: calc((100vw - 1188px) / 2);
+  }
 }
 
 .dropdown .close-button {
@@ -39,34 +49,23 @@
 }
 
 .dropdown.closed {
-  animation: slide-out-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fade-out 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes slide-in-right {
+@keyframes fade-in {
   0% {
-    transform: translateX(100%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-@keyframes slide-out-right {
+@keyframes fade-out {
   0% {
-    transform: translateX(0);
+    opacity: 1;
   }
   100% {
-    transform: translateX(100%);
-  }
-}
-
-
-.menu .label {
-  display: none;
-}
-
-@media screen and (min-width: 481px) {
-  .menu .label {
-    display: block;
+    opacity: 0;
   }
 }
