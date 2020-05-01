@@ -2,30 +2,19 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  margin: 0 auto 0 1rem;
   width: 100%;
-  max-width: 500px;
-
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f5f7fb;
-}
-
-.filter:focus-within {
-  border-color: #a6c8ff;
+  max-width: 800px;
 }
 
 .filter .input {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   font-size: 1.6rem;
   flex-grow: 1;
-  padding: 5px 8px;
+  padding: 16px 8px;
   border: none;
-  border-radius: 15px;
-  background-color: inherit;
 
-  outline: none; /* Custom focus ring using focus-within */
+  outline: none; /* TODO: Custom focus indicator */
 }
 
 .filter .input::placeholder {
@@ -33,6 +22,5 @@
 }
 
 .filter-button {
-  margin-left: 0.5rem;
   margin-right: 0.3rem;
 }

@@ -53,9 +53,7 @@ class Menu extends PureComponent {
           onClick={this.toggleMenuVisible}
           label="Show projects"
           active={this.state.open}
-        >
-          Projects
-        </Hamburger>
+        ></Hamburger>
 
         <div
           className={cn("dropdown", { closed: !this.state.open })}

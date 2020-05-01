@@ -14,6 +14,8 @@ class Header extends PureComponent {
     return (
       <header>
         <div className="bar">
+          <Filter onFilter={onFilter} currentValue={currentFilter} />
+
           {projectKeys.length > 1 && (
             // Display project selection only for more than 1 projects
             <Menu
@@ -32,8 +34,6 @@ class Header extends PureComponent {
               ]}
             />
           )}
-          <Filter onFilter={onFilter} currentValue={currentFilter} />
-          <h1 className="logo">Static Marks</h1>
         </div>
       </header>
     );
