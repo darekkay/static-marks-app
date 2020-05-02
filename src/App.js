@@ -55,6 +55,7 @@ class App extends Component {
           currentFilter={this.state.filter}
         />
         <main>
+          <h1 className="sr-only">{this.props.title}</h1>
           <div className="scrollable-y">
             <Switch>
               <Route exact path={"/"} render={this.routeCollections()} />

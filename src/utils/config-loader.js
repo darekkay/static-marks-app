@@ -20,7 +20,7 @@ const loadQueryParameter = param => {
 
 const loadConfig = () => ({
   projects: loadProjects(),
-  title: window.staticmarks ? window.staticmarks.title : "Static Marks",
+  title: window?.staticmarks?.title || "Static Marks",
   filter: loadQueryParameter("search") || ""
 });
 
