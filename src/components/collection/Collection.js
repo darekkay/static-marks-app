@@ -16,14 +16,14 @@ class Collection extends PureComponent {
     );
     const bucketTitle = bucket.title.toLowerCase();
     return bucket.links.filter(link =>
-      // All filter terms need to be included in the bucket, bookmark or note title
+      // All filter terms need to be included in the bucket, bookmark or note title/url
       words.every(
         word =>
           title.toLowerCase().includes(word) ||
           link.title.toLowerCase().includes(word) ||
+          link.url?.toLowerCase().includes(word) ||
           bucketTitle.includes(word) ||
-          (link.notes &&
-            link.notes.some(note => note.title.toLowerCase().includes(word)))
+          link.notes?.some(note => note.title.toLowerCase().includes(word))
       )
     );
   };
@@ -51,7 +51,7 @@ class Collection extends PureComponent {
     return (
       <div className="collection">
         <h2 className="collection-title" title={source}>
-          <Icon name="collection" position="left" /> <span>{title}</span>
+          <Icon name="collection" position="left"/> <span>{title}</span>
         </h2>
         <div className="buckets">{filteredBuckets}</div>
       </div>
