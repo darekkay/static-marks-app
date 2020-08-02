@@ -10,6 +10,7 @@ class Hamburger extends PureComponent {
     return (
       <button
         className="btn"
+        type="button"
         aria-label={label}
         aria-haspopup="menu"
         aria-expanded={active}

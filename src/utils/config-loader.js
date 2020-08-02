@@ -13,9 +13,9 @@ const loadProjects = () => {
 };
 
 // Enable linking to a search result, e.g. for browser search engines
-const loadQueryParameter = (param) => {
+const loadQueryParameter = (parameter) => {
   const params = new URLSearchParams(window.location.search);
-  return params.get(param);
+  return params.get(parameter);
 };
 
 const loadConfig = () => ({

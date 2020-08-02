@@ -8,10 +8,9 @@ import "./styles/index.scss";
 import "./print.scss";
 
 import App from "./App";
+import loadConfig from "./utils/config-loader";
 
 // import registerServiceWorker from './registerServiceWorker';
-
-import loadConfig from "./utils/config-loader";
 
 // why-did-you-render
 if (process.env.NODE_ENV === "development") {
@@ -37,6 +36,6 @@ ReactDOM.render(
       filter={filter}
     />
   </HashRouter>,
-  document.getElementById("root")
+  document.querySelector("#root")
 );
 // registerServiceWorker();

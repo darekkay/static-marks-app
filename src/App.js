@@ -58,7 +58,7 @@ class App extends Component {
           <h1 className="sr-only">{this.props.title}</h1>
           <div className="scrollable-y">
             <Switch>
-              <Route exact path={"/"} render={this.routeCollections()} />
+              <Route exact path="/" render={this.routeCollections()} />
               {this.props.projects.map((set) => (
                 <Route
                   key={set.key}

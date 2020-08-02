@@ -3,24 +3,23 @@
   "parser": "babel-eslint",
 
   "rules": {
+    "no-invalid-this": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": "off",
+
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["url"]
+      }
+    ],
+
     // available in ESLint 7+
     "no-loss-of-precision": "off",
     "no-promise-executor-return": "off",
     "no-unreachable-loop": "off",
     "no-useless-backreference": "off",
     "default-case-last": "off"
-  },
-
-  "overrides": [
-    {
-      "extends": ["@darekkay/eslint-config/typescript"],
-      "files": ["**/*.ts", "**/*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaFeatures": {
-          "jsx": true
-        }
-      }
-    }
-  ]
+  }
 }

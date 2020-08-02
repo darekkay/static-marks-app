@@ -20,8 +20,8 @@ class Menu extends PureComponent {
   }
 
   toggleMenuVisible = () => {
-    this.setState((prevState) => ({
-      open: !prevState.open,
+    this.setState((previousState) => ({
+      open: !previousState.open,
       firstRender: false,
     }));
   };
@@ -30,6 +30,7 @@ class Menu extends PureComponent {
     this.setState({ open: false });
   };
 
+  // eslint-disable-next-line consistent-return
   onDocumentClick = (event) => {
     let { target } = event;
     if (
@@ -56,7 +57,7 @@ class Menu extends PureComponent {
           onClick={this.toggleMenuVisible}
           label="Show projects"
           active={this.state.open}
-        ></Hamburger>
+        />
 
         <div
           className={cn("dropdown", { closed: !this.state.open })}

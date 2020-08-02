@@ -14,7 +14,7 @@ class Bookmark extends PureComponent {
   }
 
   toggleExpanded = () =>
-    this.setState((prevState) => ({ expanded: !prevState.expanded }));
+    this.setState((previousState) => ({ expanded: !previousState.expanded }));
 
   render() {
     const { title, url, notes } = this.props;

@@ -9,7 +9,12 @@ class Button extends PureComponent {
     const { className, label, icon, children, ...rest } = this.props;
 
     return (
-      <button className={cn("btn", className)} aria-label={label} {...rest}>
+      <button
+        type="button"
+        className={cn("btn", className)}
+        aria-label={label}
+        {...rest}
+      >
         <Icon name={icon} />
         {children && <div className="label">{children}</div>}
       </button>
