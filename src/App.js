@@ -10,29 +10,29 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter: props.filter
+      filter: props.filter,
     };
 
-    this.routeCollections = key => () => this.renderCollections(key);
+    this.routeCollections = (key) => () => this.renderCollections(key);
   }
 
-  filter = value => {
+  filter = (value) => {
     this.setState({ filter: value });
   };
 
-  renderTitle = key => {
+  renderTitle = (key) => {
     const prefix = key === undefined ? "" : `${key} | `;
     document.title = `${prefix}${this.props.title}`;
   };
 
-  renderCollections = key => {
+  renderCollections = (key) => {
     this.renderTitle(key);
     return (
       <div className="collections" aria-live="polite">
         {this.props.projects
-          .filter(set => key === undefined || set.key === key)
-          .map(set =>
-            set.collections.map(collection => (
+          .filter((set) => key === undefined || set.key === key)
+          .map((set) =>
+            set.collections.map((collection) => (
               <Collection
                 key={collection.title}
                 title={collection.title}
@@ -59,7 +59,7 @@ class App extends Component {
           <div className="scrollable-y">
             <Switch>
               <Route exact path={"/"} render={this.routeCollections()} />
-              {this.props.projects.map(set => (
+              {this.props.projects.map((set) => (
                 <Route
                   key={set.key}
                   exact

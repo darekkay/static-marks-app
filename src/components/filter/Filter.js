@@ -15,7 +15,7 @@ class Filter extends PureComponent {
     document.removeEventListener("keydown", this.handleKeyDown);
   }
 
-  handleKeyUp = event => {
+  handleKeyUp = (event) => {
     if (event.keyCode === 27) {
       // clear on 'escape'
       this.clearFilter();
@@ -25,7 +25,7 @@ class Filter extends PureComponent {
     }
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 27) {
       event.preventDefault(); // Firefox Hack
     }
@@ -35,11 +35,11 @@ class Filter extends PureComponent {
     if (this.props.currentValue) this.clearFilter();
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.applyFilter(event.target.value);
   };
 
-  applyFilter = filter => {
+  applyFilter = (filter) => {
     this.props.onFilter(filter);
   };
 

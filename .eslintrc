@@ -2,6 +2,15 @@
   "extends": ["@darekkay/eslint-config/react"],
   "parser": "babel-eslint",
 
+  "rules": {
+    // available in ESLint 7+
+    "no-loss-of-precision": "off",
+    "no-promise-executor-return": "off",
+    "no-unreachable-loop": "off",
+    "no-useless-backreference": "off",
+    "default-case-last": "off"
+  },
+
   "overrides": [
     {
       "extends": ["@darekkay/eslint-config/typescript"],

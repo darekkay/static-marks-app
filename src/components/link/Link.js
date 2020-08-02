@@ -7,11 +7,11 @@ class Link extends Component {
   static propTypes = {
     title: PropTypes.string,
     url: PropTypes.string.isRequired,
-    external: PropTypes.bool
+    external: PropTypes.bool,
   };
 
   static defaultProps = {
-    external: true
+    external: true,
   };
 
   shouldComponentUpdate = () => false; // The link content does not ever change

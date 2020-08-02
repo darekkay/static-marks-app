@@ -6,7 +6,7 @@ import "./Bucket.scss";
 
 class Bucket extends PureComponent {
   openAllLinks = () => {
-    this.props.links.forEach(link => window.open(link.url, "_blank"));
+    this.props.links.forEach((link) => window.open(link.url, "_blank"));
   };
 
   render() {
@@ -24,7 +24,7 @@ class Bucket extends PureComponent {
           />
         </div>
         <div className="bucket-block">
-          {links.map(link => (
+          {links.map((link) => (
             <Bookmark
               key={`${link.url}${link.title}`}
               title={link.title}

@@ -13,8 +13,8 @@ const config = {
   bookmarks: 5,
   notes: {
     frequency: 0.05,
-    count: 3
-  }
+    count: 3,
+  },
 };
 
 const data = {};
@@ -25,11 +25,11 @@ for (let i = 0; i < config.collections; i++) {
     const bookmarks = [];
     for (let k = 0; k < config.bookmarks; k++) {
       bookmarks.push({
-        [faker.random.word()]: faker.internet.url()
+        [faker.random.word()]: faker.internet.url(),
       });
     }
     buckets.push({
-      [faker.random.words(3)]: bookmarks
+      [faker.random.words(3)]: bookmarks,
     });
   }
   data[faker.lorem.word()] = buckets;

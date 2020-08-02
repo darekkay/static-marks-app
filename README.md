@@ -22,7 +22,7 @@ This is the frontend part of the [Static Marks](https://github.com/darekkay/stat
 ## Issues
 
 - Chrome doesn't allow opening [multiple links at once](https://stackoverflow.com/questions/16749907/window-open-behaviour-in-chrome-tabs-windows).
- 
+
 ## Build
 
 1. Update version of `app` and `cli`.

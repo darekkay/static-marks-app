@@ -13,7 +13,7 @@ const loadProjects = () => {
 };
 
 // Enable linking to a search result, e.g. for browser search engines
-const loadQueryParameter = param => {
+const loadQueryParameter = (param) => {
   const params = new URLSearchParams(window.location.search);
   return params.get(param);
 };
@@ -21,7 +21,7 @@ const loadQueryParameter = param => {
 const loadConfig = () => ({
   projects: loadProjects(),
   title: window?.staticmarks?.title || "Static Marks",
-  filter: loadQueryParameter("search") || ""
+  filter: loadQueryParameter("search") || "",
 });
 
 export default loadConfig;

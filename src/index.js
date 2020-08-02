@@ -20,13 +20,13 @@ if (process.env.NODE_ENV === "development") {
   whyDidYouRender(React, {
     trackAllPureComponents: true,
     exclude: [
-      /^Route/ // React Router
-    ]
+      /^Route/, // React Router
+    ],
   });
 }
 
 const { projects, title, filter } = loadConfig();
-const projectKeys = projects.map(project => project.key);
+const projectKeys = projects.map((project) => project.key);
 
 ReactDOM.render(
   <HashRouter>

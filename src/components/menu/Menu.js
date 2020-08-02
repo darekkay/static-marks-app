@@ -20,14 +20,17 @@ class Menu extends PureComponent {
   }
 
   toggleMenuVisible = () => {
-    this.setState(prevState => ({ open: !prevState.open, firstRender: false }));
+    this.setState((prevState) => ({
+      open: !prevState.open,
+      firstRender: false,
+    }));
   };
 
   hideMenu = () => {
     this.setState({ open: false });
   };
 
-  onDocumentClick = event => {
+  onDocumentClick = (event) => {
     let { target } = event;
     if (
       !target.matches("a") &&
@@ -61,7 +64,7 @@ class Menu extends PureComponent {
           hidden={this.state.firstRender}
           aria-hidden={!this.state.open}
         >
-          {items.map(item => (
+          {items.map((item) => (
             <MenuItem
               key={item.route}
               tabIndex={this.state.open ? 0 : -1}

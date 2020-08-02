@@ -12,12 +12,12 @@ inline
     rootpath: path.resolve("build"),
     attribute: false,
     // Skip all css types and png formats
-    ignore: ["json", "svg", "png", "ico"]
+    ignore: ["json", "svg", "png", "ico"],
   })
-  .then(html => {
+  .then((html) => {
     // Do something with html
 
-    fs.writeFile(output, html, err => {
+    fs.writeFile(output, html, (err) => {
       if (err) {
         return console.error(err);
       }
@@ -25,6 +25,6 @@ inline
       return console.log(`Template was saved: ${path.resolve(output)}`);
     });
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
   });

@@ -9,7 +9,7 @@ class Icon extends PureComponent {
     return (
       <div
         className={cn("icon", `icon-${name}`, {
-          [`icon-${position}`]: position
+          [`icon-${position}`]: position,
         })}
       />
     );

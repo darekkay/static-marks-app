@@ -24,13 +24,13 @@ class Header extends PureComponent {
                   route: "/",
                   title: "all",
                   icon: "clone",
-                  onClick: clearFilterOnProjectChange
+                  onClick: clearFilterOnProjectChange,
                 },
-                ...projectKeys.map(projectKey => ({
+                ...projectKeys.map((projectKey) => ({
                   route: `/${projectKey}`,
                   projectKey,
-                  onClick: clearFilterOnProjectChange
-                }))
+                  onClick: clearFilterOnProjectChange,
+                })),
               ]}
             />
           )}
