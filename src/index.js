@@ -12,18 +12,6 @@ import loadConfig from "./utils/config-loader";
 
 // import registerServiceWorker from './registerServiceWorker';
 
-// why-did-you-render
-if (process.env.NODE_ENV === "development") {
-  // eslint-disable-next-line global-require
-  const whyDidYouRender = require("@welldone-software/why-did-you-render");
-  whyDidYouRender(React, {
-    trackAllPureComponents: true,
-    exclude: [
-      /^Route/, // React Router
-    ],
-  });
-}
-
 const { projects, title, filter } = loadConfig();
 const projectKeys = projects.map((project) => project.key);
 

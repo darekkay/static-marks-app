@@ -9,7 +9,6 @@
   ],
   "dependencies": {
     "@darekkay/styles": "1.0.7",
-    "@welldone-software/why-did-you-render": "4.2.7",
     "classnames": "2.2.6",
     "faker": "4.1.0",
     "inline-source": "7.2.0",
