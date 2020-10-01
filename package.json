@@ -10,7 +10,6 @@
   "dependencies": {
     "@darekkay/styles": "1.0.7",
     "classnames": "2.2.6",
-    "faker": "4.1.0",
     "inline-source": "7.2.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
@@ -31,6 +30,7 @@
     "eslint-plugin-react-hooks": "4.0.8",
     "eslint-plugin-testing-library": "3.4.0",
     "eslint-plugin-unicorn": "21.0.0",
+    "faker": "4.1.0",
     "node-sass": "4.14.1",
     "prettier": "2.0.5"
   },
