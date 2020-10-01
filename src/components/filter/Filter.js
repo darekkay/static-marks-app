@@ -66,6 +66,7 @@ class Filter extends PureComponent {
           aria-label="Search everywhere"
           onChange={this.handleChange}
           type="search"
+          ref={(input) => input && input.focus()}
         />
       </div>
     );
