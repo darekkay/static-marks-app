@@ -32,3 +32,7 @@ This is the frontend part of the [Static Marks](https://github.com/darekkay/stat
 5. Make sure no CRLF line endings are used in CLI files.
 6. npm publish
 7. Make GitHub Release
+
+## License
+
+This project and its contents are open source under the [MIT license](https://github.com/darekkay/static-marks/blob/master/LICENSE).
