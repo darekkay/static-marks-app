@@ -1,6 +1,9 @@
-# Static Marks - App
+# Static Marks — App
 
-This is the frontend part of the [Static Marks](https://github.com/darekkay/static-marks) project. Please view the main repository for more information.
+[![Build](https://img.shields.io/github/workflow/status/darekkay/static-marks-app/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/static-marks-app/actions)
+[![license](https://img.shields.io/github/license/darekkay/static-marks-app.svg?style=flat-square)](https://github.com/darekkay/static-marks-app/blob/master/LICENSE)
+
+**Note:** This is the frontend part of the [Static Marks](https://github.com/darekkay/static-marks) project. Please view the main repository for more information.
 
 ## Terms
 
