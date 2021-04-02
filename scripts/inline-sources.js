@@ -1,6 +1,7 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, import/no-nodejs-modules */
 const fs = require("fs");
 const path = require("path");
+
 const inline = require("inline-source");
 
 const htmlpath = path.resolve("build/index.html");
@@ -17,14 +18,14 @@ inline
   .then((html) => {
     // Do something with html
 
-    fs.writeFile(output, html, (err) => {
-      if (err) {
-        return console.error(err);
+    fs.writeFile(output, html, (error) => {
+      if (error) {
+        return console.error(error);
       }
 
       return console.log(`Template was saved: ${path.resolve(output)}`);
     });
   })
-  .catch((err) => {
-    console.error(err);
+  .catch((error) => {
+    console.error(error);
   });
