@@ -1,37 +1,17 @@
-import React, { PureComponent } from "react";
+import React, { useState, useEffect } from "react";
 import cn from "classnames";
 
 import Hamburger from "../../components/hamburger/Hamburger";
 import MenuItem from "./MenuItem";
 import "./Menu.scss";
 
-class Menu extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = { open: false, firstRender: true };
-  }
+const Menu = (props) => {
+  const { items } = props;
 
-  componentDidMount() {
-    document.addEventListener("click", this.onDocumentClick);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener("click", this.onDocumentClick);
-  }
-
-  toggleMenuVisible = () => {
-    this.setState((previousState) => ({
-      open: !previousState.open,
-      firstRender: false,
-    }));
-  };
-
-  hideMenu = () => {
-    this.setState({ open: false });
-  };
+  const [open, setOpen] = useState(false);
 
   // eslint-disable-next-line consistent-return
-  onDocumentClick = (event) => {
+  const onDocumentClick = (event) => {
     let { target } = event;
     if (
       !target.matches("a") &&
@@ -45,37 +25,36 @@ class Menu extends PureComponent {
       }
     }
 
-    this.hideMenu();
+    setOpen(false);
   };
 
-  render() {
-    const { items } = this.props;
+  useEffect(() => {
+    document.addEventListener("click", onDocumentClick);
 
-    return (
-      <div className="menu">
-        <Hamburger
-          onClick={this.toggleMenuVisible}
-          label="Show projects"
-          active={this.state.open}
-        />
+    return () => {
+      document.removeEventListener("click", onDocumentClick);
+    };
+  }, []);
 
-        <div
-          className={cn("dropdown", { closed: !this.state.open })}
-          role="menu"
-          hidden={this.state.firstRender}
-          aria-hidden={!this.state.open}
-        >
-          {items.map((item) => (
-            <MenuItem
-              key={item.route}
-              tabIndex={this.state.open ? 0 : -1}
-              {...item}
-            />
-          ))}
-        </div>
+  return (
+    <div className="menu">
+      <Hamburger
+        onClick={() => setOpen(!open)}
+        label="Show projects"
+        active={open}
+      />
+
+      <div
+        className={cn("dropdown", { closed: !open })}
+        role="menu"
+        aria-hidden={!open}
+      >
+        {items.map((item) => (
+          <MenuItem key={item.route} tabIndex={open ? 0 : -1} {...item} />
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Menu;

@@ -33,7 +33,9 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 
-  animation: fade-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s;
 }
 
 @media screen and (min-width: 1201px) {
@@ -49,23 +51,6 @@
 }
 
 .dropdown.closed {
-  animation: fade-out 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  opacity: 0;
+  visibility: hidden;
 }
