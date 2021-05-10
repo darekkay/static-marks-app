@@ -19,7 +19,7 @@ ReactDOM.render(
       projects={projects}
       projectKeys={projectKeys}
       title={title}
-      filter={filter}
+      initialFilter={filter}
     />
   </HashRouter>,
   document.querySelector("#root")

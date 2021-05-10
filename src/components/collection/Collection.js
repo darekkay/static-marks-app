@@ -27,17 +27,12 @@ const filterLinks = (title, bucket, filter) => {
   );
 };
 
-const Collection = ({ title, buckets, filter, source }) => {
+const Collection = ({ title, buckets, currentFilter, source }) => {
   const filteredBuckets = buckets.map((bucket, index) => {
-    const filteredLinks = filterLinks(title, bucket, filter);
+    const filteredLinks = filterLinks(title, bucket, currentFilter);
     return (
       filteredLinks.length > 0 && (
-        <Bucket
-          key={index}
-          title={bucket.title}
-          links={filteredLinks}
-          filter={filter}
-        />
+        <Bucket key={index} title={bucket.title} links={filteredLinks} />
       )
     );
   });

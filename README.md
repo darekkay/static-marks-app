@@ -20,7 +20,6 @@
 ## Shortcuts
 
 - Esc: Reset filter
-- f: Focus filter input
 
 ## Issues
 

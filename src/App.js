@@ -6,9 +6,8 @@ import Footer from "./components/footer/Footer";
 import Collection from "./components/collection/Collection";
 import "./App.scss";
 
-const App = ({ title, projectKeys, projects, filter }) => {
-  // TODO: decouple state from props
-  const [stateFilter, applyFilter] = useState(filter);
+const App = ({ title, projectKeys, projects, initialFilter }) => {
+  const [currentFilter, applyFilter] = useState(initialFilter);
 
   const renderTitle = (key) => {
     const prefix = key === undefined ? "" : `${key} | `;
@@ -30,7 +29,7 @@ const App = ({ title, projectKeys, projects, filter }) => {
                 title={collection.title}
                 source={set.key}
                 buckets={collection.buckets}
-                filter={stateFilter}
+                currentFilter={currentFilter}
               />
             ))
           )}
@@ -43,7 +42,7 @@ const App = ({ title, projectKeys, projects, filter }) => {
       <Header
         projectKeys={projectKeys}
         applyFilter={applyFilter}
-        currentFilter={stateFilter}
+        currentFilter={currentFilter}
       />
       <main>
         <h1 className="sr-only">{title}</h1>
@@ -56,7 +55,9 @@ const App = ({ title, projectKeys, projects, filter }) => {
                 exact
                 path={`/${set.key}`}
                 render={
-                  stateFilter ? renderCollections() : renderCollections(set.key)
+                  currentFilter
+                    ? renderCollections()
+                    : renderCollections(set.key)
                 }
               />
             ))}
