@@ -10,8 +10,6 @@ import "./print.scss";
 import App from "./App";
 import loadConfig from "./utils/config-loader";
 
-// import registerServiceWorker from './registerServiceWorker';
-
 const { projects, title, filter } = loadConfig();
 const projectKeys = projects.map((project) => project.key);
 
@@ -26,4 +24,3 @@ ReactDOM.render(
   </HashRouter>,
   document.querySelector("#root")
 );
-// registerServiceWorker();
