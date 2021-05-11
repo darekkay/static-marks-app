@@ -1,29 +1,27 @@
-.btn {
+.btn-unstyled {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1px 4px;
 
   background-color: transparent;
   color: inherit;
   border: none;
   cursor: pointer;
-}
-
-.btn {
   opacity: 0.8;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-unstyled:hover,
+.btn-unstyled:focus {
   opacity: 1;
 }
 
-.btn:disabled,
-.btn[disabled] {
+.btn-unstyled:disabled,
+.btn-unstyled[disabled] {
   cursor: initial;
   opacity: 1;
 }
 
-.btn .label {
+.btn-unstyled .label {
   margin-left: 1rem;
 }

@@ -7,7 +7,7 @@ import "./Button.scss";
 const Button = ({ className, label, icon, children, ...rest }) => (
   <button
     type="button"
-    className={cn("btn", className)}
+    className={cn("btn-unstyled", className)}
     aria-label={label}
     {...rest}
   >

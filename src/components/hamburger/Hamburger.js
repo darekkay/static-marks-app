@@ -5,7 +5,7 @@ import "./Hamburger.scss";
 
 const Hamburger = ({ label, active, children, ...rest }) => (
   <button
-    className="btn"
+    className="btn-unstyled"
     type="button"
     aria-label={label}
     aria-haspopup="menu"
