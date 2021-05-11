@@ -4,9 +4,9 @@ const loadProjects = () => {
   if (window.staticmarks) {
     return window.staticmarks.bookmarks;
   }
-  if (process.env.REACT_APP_BOOKMARKS) {
+  if (import.meta.env.VITE_BOOKMARKS) {
     // Pass the bookmarks as an environmental variable. The bookmarks will be added at build time.
-    return JSON.parse(process.env.REACT_APP_BOOKMARKS);
+    return JSON.parse(import.meta.env.VITE_BOOKMARKS);
   }
 
   return [];

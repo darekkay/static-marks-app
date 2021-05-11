@@ -47,13 +47,13 @@ const Filter = ({ currentValue, applyFilter }) => {
         />
       </div>
       <input
+        ref={(input) => input && input.focus()}
         className="input"
         value={currentValue}
         placeholder="Search everywhere..."
         aria-label="Search everywhere"
         onChange={handleChange}
         type="search"
-        ref={(input) => input && input.focus()}
       />
     </div>
   );

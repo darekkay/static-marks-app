@@ -11,12 +11,12 @@ const Footer = () => (
         <Link url="https://darekkay.com">Darek Kay</Link>
       </span>
 
-      {process.env.REACT_APP_VERSION && (
+      {import.meta.env.PACKAGE_VERSION && (
         <span>
           <Link url="https://github.com/darekkay/static-marks">
             Static Marks
           </Link>
-          <span> {process.env.REACT_APP_VERSION}</span>
+          <span> {import.meta.env.PACKAGE_VERSION}</span>
         </span>
       )}
     </div>
