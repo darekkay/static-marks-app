@@ -5,10 +5,11 @@ import { HashRouter } from "react-router-dom";
 import "./polyfills";
 
 import "./styles/index.scss";
-import "./print.scss";
 
 import App from "./App";
 import loadConfig from "./utils/config-loader";
+
+import "./print.scss"; // load print stylesheets last
 
 const { projects, title, filter } = loadConfig();
 const projectKeys = projects.map((project) => project.key);

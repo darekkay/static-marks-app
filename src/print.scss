@@ -17,6 +17,7 @@
   }
 
   .bookmark-row .link:after {
+    color: #005aff;
     content: " (" attr(href) ") ";
     font-size: 1.2rem;
     font-weight: normal;
