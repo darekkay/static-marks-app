@@ -4,7 +4,9 @@
 // {"Bookmark with notes":{"url":"https://example.com","notes":["Text Notes only"]}
 // {"Regular Bookmark":"https://example.com"}
 
+// eslint-disable-next-line import/no-nodejs-modules
 const fs = require("fs");
+
 const faker = require("faker");
 
 const config = {

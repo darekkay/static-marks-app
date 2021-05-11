@@ -11,42 +11,30 @@
   "dependencies": {
     "@darekkay/styles": "2.3.6",
     "classnames": "2.3.1",
-    "inline-source": "7.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
-    "@darekkay/eslint-config": "2.1.2",
-    "cross-env": "7.0.2",
-    "eslint-config-prettier": "6.12.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "23.20.0",
-    "eslint-plugin-jest-dom": "3.2.3",
-    "eslint-plugin-jsx-a11y": "6.3.1",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.21.2",
-    "eslint-plugin-react-hooks": "4.1.2",
-    "eslint-plugin-testing-library": "3.9.0",
-    "eslint-plugin-unicorn": "21.0.0",
+    "@darekkay/scripts": "1.1.2",
     "faker": "5.5.3",
-    "node-sass": "4.14.1",
-    "prettier": "2.3.0"
+    "inline-source": "7.2.0",
+    "node-sass": "4.14.1"
   },
   "engines": {
     "node": ">=12.0.0"
   },
   "license": "MIT",
+  "main": "src/index.js",
   "private": true,
   "scripts": {
     "build": "react-scripts build && node scripts/inline-sources.js",
-    "ci": "npm run lint && npm run test",
-    "format": "prettier --write .",
+    "ci": "dks ci",
+    "format": "dks format",
     "inline-sources": "node scripts/inline-sources.js",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint --fix src/**/*.js",
+    "lint": "dks lint",
     "start": "react-scripts start",
-    "test": "cross-env CI=true react-scripts test --env=jsdom --modulePaths=src"
+    "test": "dks test"
   }
 }
