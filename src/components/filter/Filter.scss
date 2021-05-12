@@ -2,17 +2,32 @@
   position: relative;
 
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
 }
 
 .filter .input {
   width: 100%;
-  max-width: 800px;
   flex-grow: 1;
-  padding: 16px 8px 16px 40px;
-  border: none;
+  padding: 16px 8px 8px 40px;
+  margin-bottom: 6px;
 
-  outline: none; /* TODO: Custom focus indicator */
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+
+  // Progressive enhancement: https://matthiasott.com/notes/focus-visible-is-here
+  &:focus {
+    border-bottom-color: var(--color-focus-ring);
+  }
+
+  :focus:not(:focus-visible) {
+    border-bottom-color: transparent;
+  }
+
+  &:focus-visible {
+    border-bottom-color: var(--color-focus-ring);
+  }
 }
 
 .filter .input::placeholder {
