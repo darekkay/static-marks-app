@@ -1,7 +1,7 @@
 {
   "name": "static-marks-app",
   "description": "Frontend for Static Marks",
-  "version": "2.2.7",
+  "version": "2.3.0",
   "browserslist": [
     ">0.2%",
     "not dead",
