@@ -9,7 +9,7 @@ const output = "../cli/src/_template.html";
 
 inline
   .inlineSource(htmlpath, {
-    compress: true,
+    compress: false,
     rootpath: path.resolve("build"),
     attribute: false,
     // Skip all css types and png formats
