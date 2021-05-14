@@ -1,4 +1,4 @@
-/* eslint-disable no-console, import/no-nodejs-modules */
+/* eslint-disable no-console */
 const fs = require("fs");
 const path = require("path");
 

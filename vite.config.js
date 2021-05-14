@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-nodejs-modules
 import { resolve } from "path";
 
 import { defineConfig } from "vite";
