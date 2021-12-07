@@ -8,7 +8,7 @@ const MenuItem = ({ projectKey, route, title, icon, tabIndex, onClick }) => (
   <div className="menu-item">
     <NavLink
       to={route}
-      exact
+      end
       activeClassName="active"
       role="menuitem"
       onClick={onClick}

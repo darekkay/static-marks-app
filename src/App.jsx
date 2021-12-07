@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -48,20 +48,25 @@ const App = (props) => {
       <main>
         <h1 className="sr-only">{title}</h1>
         <div className="scrollable-y">
-          <Switch>
-            <Route exact path="/">
-              <Collections currentFilter={currentFilter} {...props} />
-            </Route>
+          <Routes>
+            <Route
+              path="/"
+              element={<Collections currentFilter={currentFilter} {...props} />}
+            />
             {projects.map((project) => (
-              <Route key={project.key} exact path={`/${project.key}`}>
-                <Collections
-                  currentFilter={currentFilter}
-                  projectKey={currentFilter ? undefined : project.key}
-                  {...props}
-                />
-              </Route>
+              <Route
+                key={project.key}
+                path={`/${project.key}`}
+                element={
+                  <Collections
+                    currentFilter={currentFilter}
+                    projectKey={currentFilter ? undefined : project.key}
+                    {...props}
+                  />
+                }
+              />
             ))}
-          </Switch>
+          </Routes>
           <div className="no-results">
             Your filter did not match any bookmarks.
           </div>

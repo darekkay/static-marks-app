@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 
 import Menu from "../menu/Menu";
 import Filter from "../filter/Filter";
@@ -36,4 +35,4 @@ const Header = ({ projectKeys, applyFilter, currentFilter }) => {
   );
 };
 
-export default withRouter(Header);
+export default Header;

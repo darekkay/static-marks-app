@@ -10,7 +10,7 @@
 
   $transition-time: 0.4s;
   $rotation: 45deg;
-  $translateY: ($height-icon / 2);
+  $translateY: ($height-icon * 0.5);
   $translateX: 0;
 
   width: $width-line;
@@ -26,7 +26,7 @@
     height: $height-line;
     position: absolute;
     left: 0;
-    border-radius: ($height-line / 2);
+    border-radius: ($height-line * 0.5);
     transition: all $transition-time;
     -webkit-transition: all $transition-time;
     -moz-transition: all $transition-time;
