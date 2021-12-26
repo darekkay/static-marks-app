@@ -25,6 +25,7 @@ const Header = ({ projectKeys, applyFilter, currentFilter }) => {
               ...projectKeys.map((projectKey) => ({
                 route: `/${projectKey}`,
                 projectKey,
+                icon: "folder",
                 onClick: clearFilterOnProjectChange,
               })),
             ]}

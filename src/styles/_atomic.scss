@@ -1,0 +1,52 @@
+.text-default {
+  color: var(--color-text-default);
+}
+.text-offset {
+  color: var(--color-text-offset);
+}
+.text-accent {
+  color: var(--color-text-accent);
+}
+.text-interaction {
+  color: var(--color-text-interaction);
+}
+.text-success {
+  color: var(--color-text-success);
+}
+.text-danger {
+  color: var(--color-text-danger);
+}
+.text-inverted-default {
+  color: var(--inverted-color-text-default);
+}
+.text-inverted-interaction {
+  color: var(--inverted-color-text-interaction);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-inherit {
+  background-color: inherit;
+}
+.bg-default {
+  background-color: var(--color-background-default);
+}
+.bg-offset {
+  background-color: var(--color-background-offset);
+}
+.bg-success {
+  background-color: var(--color-background-success);
+}
+.bg-warning {
+  background-color: var(--color-background-warning);
+}
+.bg-danger {
+  background-color: var(--color-background-danger);
+}
+.bg-info {
+  background-color: var(--color-background-info);
+}
+.bg-inverted {
+  background-color: var(--inverted-color-background-default);
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
+import IconSprite from "./components/icon/IconSprite";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Collection from "./components/collection/Collection";
@@ -40,6 +41,7 @@ const App = (props) => {
 
   return (
     <div className="app">
+      <IconSprite />
       <Header
         projectKeys={projectKeys}
         applyFilter={applyFilter}
