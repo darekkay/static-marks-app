@@ -1,7 +1,7 @@
 .hamburger {
   // Based on: https://codepen.io/stevenfabre/pen/LGvzk
 
-  $color: #525657;
+  $color: var(--color-text-default);
 
   $height-icon: 10px;
   $width-line: 20px;

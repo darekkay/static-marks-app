@@ -31,7 +31,7 @@
 }
 
 .filter .input::placeholder {
-  color: #777;
+  color: var(--color-text-placeholder);
 }
 
 .filter-button {

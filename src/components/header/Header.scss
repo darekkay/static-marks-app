@@ -8,7 +8,7 @@ header {
   height: 60px;
   z-index: 100;
 
-  background-color: #fff;
+  background-color: var(--color-background-default);
   border-bottom: 1px solid #ccc;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }

@@ -12,8 +12,8 @@
 
 .menu button:hover,
 .menu button:focus {
-  background-color: #f5f6f7; /* gray-cool-3 */
-  border-color: #ccc;
+  background-color: var(--color-background-offset);
+  border-color: var(--color-border);
 }
 
 .dropdown {
@@ -27,7 +27,7 @@
   overflow-y: auto;
   overflow-x: hidden;
 
-  background-color: white;
+  background-color: var(--color-background-default);
 
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.15);

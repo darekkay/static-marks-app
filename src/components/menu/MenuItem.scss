@@ -19,10 +19,6 @@
   background-color: var(--color-background-offset);
 }
 
-.menu-item a.active {
-  color: #000;
-}
-
 .menu-item a.active .item-active,
 .menu-item a .item-inactive {
   display: initial;
