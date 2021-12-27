@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import "./Icon.scss";
 
-const Icon = ({ name, position, className, style }) => {
+const Icon = ({ name, position, className }) => {
   return (
     <svg
       className={cn(
@@ -14,7 +14,6 @@ const Icon = ({ name, position, className, style }) => {
         },
         className
       )}
-      style={style}
     >
       <use xlinkHref={`#icon-${name}`} />
     </svg>
