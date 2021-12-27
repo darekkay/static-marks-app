@@ -3,17 +3,18 @@
 }
 
 .menu button {
-  height: 40px;
+  height: 35px;
   font-size: 1.6rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.7rem;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 0.4rem;
 }
 
 .menu button:hover,
 .menu button:focus {
-  background-color: var(--color-background-offset);
-  border-color: var(--color-border);
+  .hamburger .line {
+    background-color: var(--color-text-interaction);
+  }
 }
 
 .dropdown {
