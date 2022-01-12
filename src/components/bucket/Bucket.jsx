@@ -17,6 +17,7 @@ const Bucket = ({ title, links }) => {
           onClick={openAllLinks}
           label="Open all links from this bucket"
           tabIndex="-1"
+          title="Open all links from this bucket"
           icon="open-all"
         />
       </div>
