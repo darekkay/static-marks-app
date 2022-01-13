@@ -37,7 +37,13 @@ const Filter = ({ currentValue, applyFilter }) => {
   };
 
   return (
-    <div className="filter" role="search">
+    // using a form to enable adding a custom browser search engine from the filter input
+    <form
+      className="filter"
+      role="search"
+      // prevent site reloads
+      onSubmit={(event) => event.preventDefault()}
+    >
       <div className={cn("filter-button", { empty: !currentValue })}>
         <Button
           label="Clear filter"
@@ -48,6 +54,7 @@ const Filter = ({ currentValue, applyFilter }) => {
       </div>
       <input
         ref={(input) => input && input.focus()}
+        name="search"
         className="input"
         value={currentValue}
         placeholder="Search everywhere..."
@@ -55,7 +62,7 @@ const Filter = ({ currentValue, applyFilter }) => {
         onChange={handleChange}
         type="search"
       />
-    </div>
+    </form>
   );
 };
 
