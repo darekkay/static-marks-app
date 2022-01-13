@@ -38,9 +38,12 @@ const Collections = ({ projects, projectKey, title, currentFilter }) => {
 const App = (props) => {
   const { title, projectKeys, projects, initialFilter } = props;
   const [currentFilter, applyFilter] = useState(initialFilter);
+  const defaultWhite = window.matchMedia(
+    "(prefers-color-scheme: white)"
+  ).matches;
 
   return (
-    <div className="app">
+    <div className="app" data-theme={defaultWhite ? "light" : "dark"}>
       <IconSprite />
       <Header
         projectKeys={projectKeys}
