@@ -14,7 +14,7 @@ const Bookmark = ({ title, url, notes }) => {
 
   return (
     <div className="bookmark">
-      <div className="bookmark-row">
+      <div className="bookmark-row text-offset">
         {!!url && (
           <Link title={title} url={url}>
             <Icon name="bookmark" className="text-default" position="left" />
