@@ -42,7 +42,7 @@ const Collection = ({ title, buckets, currentFilter, source }) => {
 
   return (
     <div className="collection">
-      <h2 className="collection-title" title={source}>
+      <h2 className="collection-title text-default" title={source}>
         <Icon name="collection" position="left" /> <span>{title}</span>
       </h2>
       <div className="buckets">{filteredBuckets}</div>
