@@ -14,8 +14,16 @@ const MenuItem = ({ projectKey, route, title, icon, tabIndex, onClick }) => (
       onClick={onClick}
       tabIndex={tabIndex}
     >
-      <Icon name={icon} className="item-inactive" position="left" />
-      <Icon name={`${icon}-filled`} className="item-active" position="left" />
+      <Icon
+        name={icon}
+        className="item-inactive text-default"
+        position="left"
+      />
+      <Icon
+        name={`${icon}-filled`}
+        className="item-active text-default"
+        position="left"
+      />
       {title || projectKey}
     </NavLink>
   </div>
