@@ -12,7 +12,7 @@ const Bucket = ({ title, links }) => {
   return (
     <div className="bucket">
       <div className="bucket-header">
-        <h3 className="bucket-title">{title}</h3>
+        <h3 className="bucket-title text-default">{title}</h3>
         <Button
           onClick={openAllLinks}
           label="Open all links from this bucket"
