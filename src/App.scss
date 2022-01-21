@@ -1,3 +1,5 @@
+@import "~@darekkay/styles/src/base/colors";
+
 main {
   position: absolute;
   top: 60px;
@@ -15,6 +17,7 @@ main {
 .scrollable-y {
   height: 100%;
   overflow-y: auto;
+  background-color: var(--color-background-default);
 }
 
 .no-results {
