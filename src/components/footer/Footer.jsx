@@ -5,7 +5,7 @@ import "./Footer.scss";
 
 const Footer = () => (
   <footer>
-    <div className="footer-inner text-default">
+    <div className="footer-inner">
       <span>
         <span>Handmade with &hearts; by </span>
         <Link url="https://darekkay.com">Darek Kay</Link>

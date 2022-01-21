@@ -46,7 +46,6 @@ const Filter = ({ currentValue, applyFilter }) => {
     >
       <div className={cn("filter-button", { empty: !currentValue })}>
         <Button
-          className="text-default"
           label="Clear filter"
           disabled={!currentValue}
           onClick={handleFilterButtonClicked}
@@ -56,7 +55,7 @@ const Filter = ({ currentValue, applyFilter }) => {
       <input
         ref={(input) => input && input.focus()}
         name="search"
-        className="input bg-default text-default"
+        className="input"
         value={currentValue}
         placeholder="Search everywhere..."
         aria-label="Search everywhere"

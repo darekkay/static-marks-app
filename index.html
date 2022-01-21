@@ -8,6 +8,10 @@
 
     <script>var injected="%INJECTED%"</script>
     <title>Static Marks</title>
+    <script>(function() {
+      document.documentElement.dataset.theme = localStorage.getItem("theme")
+        || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+    })();</script>
   </head>
   <body>
     <noscript>

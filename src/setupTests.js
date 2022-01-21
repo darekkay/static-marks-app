@@ -1,3 +1,4 @@
+// matchMedia is not implemented in JSDOM
 window.matchMedia = (query) => ({
   matches: false,
   media: query,
