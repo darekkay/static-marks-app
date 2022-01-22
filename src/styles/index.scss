@@ -1,12 +1,14 @@
 @import "~@darekkay/styles/src/base/reset";
 @import "~@darekkay/styles/src/base/colors";
 @import "~@darekkay/styles/src/base/variables";
+@import "~@darekkay/styles/src/themes/default";
+@import "~@darekkay/styles/src/themes/dark";
 @import "~@darekkay/styles/src/typography/generic";
 @import "~@darekkay/styles/src/forms/all";
-@import "~@darekkay/styles/src/utilities/focus-ring";
 @import "~@darekkay/styles/src/utilities/accessibility";
+@import "~@darekkay/styles/src/utilities/focus-ring";
+@import "~@darekkay/styles/src/utilities/generic";
 @import "~@darekkay/styles/src/utilities/reduced-motion";
 @import "~@darekkay/styles/src/utilities/noscript";
 
 @import "base";
-@import "atomic";
