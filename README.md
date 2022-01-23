@@ -27,13 +27,12 @@
 
 ## Build
 
-1. Update version of `app` and `cli`.
+1. Update version of `app`.
 2. Run `yarn build` for `app`.
-3. Update Changelog
-4. Update version in template
+3. Check if `cli` changelog is up-to-date.
+4. If it's a `cli`-only change, update version in template.
 5. Make sure no CRLF line endings are used in CLI files.
-6. npm publish
-7. Make GitHub Release
+6. `npm publish` + GitHub Release (`releasec`).
 
 ## License
 

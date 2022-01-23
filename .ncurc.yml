@@ -1,0 +1,5 @@
+# npm-check-updates configuration
+
+reject:
+  # avoid a destructive update
+  - "faker"
