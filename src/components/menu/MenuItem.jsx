@@ -9,7 +9,6 @@ const MenuItem = ({ projectKey, route, title, icon, tabIndex, onClick }) => (
     <NavLink
       to={route}
       end
-      activeClassName="active"
       role="menuitem"
       onClick={onClick}
       tabIndex={tabIndex}
