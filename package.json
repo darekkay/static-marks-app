@@ -1,7 +1,7 @@
 {
   "name": "static-marks-app",
   "description": "Frontend for Static Marks",
-  "version": "2.4.0",
+  "version": "2.4.10",
   "dependencies": {
     "@darekkay/styles": "2.6.4",
     "classnames": "2.3.1",
