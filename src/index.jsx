@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 
 import "./polyfills";
@@ -14,7 +14,8 @@ import "./print.scss"; // load print stylesheets last
 const { projects, title, filter } = loadConfig();
 const projectKeys = projects.map((project) => project.key);
 
-ReactDOM.render(
+const container = document.querySelector("#root");
+createRoot(container).render(
   <HashRouter>
     <App
       projects={projects}
@@ -22,6 +23,5 @@ ReactDOM.render(
       title={title}
       initialFilter={filter}
     />
-  </HashRouter>,
-  document.querySelector("#root")
+  </HashRouter>
 );
