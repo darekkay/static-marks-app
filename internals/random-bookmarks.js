@@ -6,7 +6,7 @@
 
 const fs = require("fs");
 
-const faker = require("faker");
+const { faker } = require("@faker-js/faker");
 
 const config = {
   collections: 2,
@@ -26,14 +26,14 @@ for (let i = 0; i < config.collections; i++) {
     const bookmarks = [];
     for (let k = 0; k < config.bookmarks; k++) {
       bookmarks.push({
-        [faker.random.word()]: faker.internet.url(),
+        [faker.word.noun()]: faker.internet.url(),
       });
     }
     buckets.push({
       [faker.random.words(3)]: bookmarks,
     });
   }
-  data[faker.lorem.word()] = buckets;
+  data[faker.word.noun()] = buckets;
 }
 
 fs.writeFileSync("./performance-test.json", JSON.stringify(data));
