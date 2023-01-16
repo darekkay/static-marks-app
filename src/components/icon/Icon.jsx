@@ -1,12 +1,12 @@
 import React from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import "./Icon.scss";
 
 const Icon = ({ name, position, className }) => {
   return (
     <svg
-      className={cn(
+      className={clsx(
         "icon",
         `icon-${name}`,
         {

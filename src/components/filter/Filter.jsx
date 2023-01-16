@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import Button from "../button/Button";
 import "./Filter.scss";
@@ -44,7 +44,7 @@ const Filter = ({ currentValue, applyFilter }) => {
       // prevent site reloads
       onSubmit={(event) => event.preventDefault()}
     >
-      <div className={cn("filter-button", { empty: !currentValue })}>
+      <div className={clsx("filter-button", { empty: !currentValue })}>
         <Button
           label="Clear filter"
           disabled={!currentValue}

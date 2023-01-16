@@ -1,5 +1,5 @@
 import React from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import "./Hamburger.scss";
 
@@ -12,7 +12,7 @@ const Hamburger = ({ label, active, children, ...rest }) => (
     aria-expanded={active}
     {...rest}
   >
-    <span className={cn("hamburger", { active })}>
+    <span className={clsx("hamburger", { active })}>
       <span className="line line-1" />
       <span className="line line-2" />
       <span className="line line-3" />

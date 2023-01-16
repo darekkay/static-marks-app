@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import Hamburger from "../../components/hamburger/Hamburger";
 import MenuItem from "./MenuItem";
@@ -45,7 +45,7 @@ const Menu = (props) => {
       />
 
       <div
-        className={cn("dropdown", { closed: !open })}
+        className={clsx("dropdown", { closed: !open })}
         role="menu"
         aria-hidden={!open}
       >

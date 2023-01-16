@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import Note from "../note/Note";
 import Link from "../link/Link";
@@ -30,7 +30,7 @@ const Bookmark = ({ title, url, notes }) => {
 
         {notes && (
           <Button
-            className={cn("button-expand", { expanded })}
+            className={clsx("button-expand", { expanded })}
             onClick={toggleExpanded}
             icon="angle-down"
             label={expanded ? "Close notes" : "Open notes"}

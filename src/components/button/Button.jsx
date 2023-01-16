@@ -1,5 +1,5 @@
 import React from "react";
-import cn from "classnames";
+import clsx from "clsx";
 
 import Icon from "../icon/Icon";
 import "./Button.scss";
@@ -7,7 +7,7 @@ import "./Button.scss";
 const Button = ({ className, label, icon, children, ...rest }) => (
   <button
     type="button"
-    className={cn("btn-unstyled", className)}
+    className={clsx("btn-unstyled", className)}
     aria-label={label}
     {...rest}
   >
