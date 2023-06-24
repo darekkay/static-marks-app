@@ -3,19 +3,19 @@
   "description": "Frontend for Static Marks",
   "version": "2.4.10",
   "dependencies": {
-    "@darekkay/styles": "3.3.4",
+    "@darekkay/styles": "4.3.0",
     "clsx": "1.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.6.2"
+    "react-router-dom": "6.14.0"
   },
   "devDependencies": {
-    "@darekkay/scripts": "2.5.0",
-    "@faker-js/faker": "7.6.0",
-    "@vitejs/plugin-react": "3.0.1",
-    "inline-source": "7.2.0",
-    "sass": "1.57.1",
-    "vite": "4.0.4"
+    "@darekkay/scripts": "2.6.2",
+    "@faker-js/faker": "8.0.2",
+    "@vitejs/plugin-react": "4.0.1",
+    "inline-source": "8.0.2",
+    "sass": "1.63.6",
+    "vite": "4.3.9"
   },
   "engines": {
     "node": ">=14.0.0"
