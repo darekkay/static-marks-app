@@ -27,6 +27,10 @@
     "type": "git",
     "url": "https://github.com/darekkay/static-marks-app.git"
   },
+  "resolutions": {
+    "string-width": "4.2.3",
+    "wrap-ansi": "7.0.0"
+  },
   "scripts": {
     "build": "run-s build:vite inline-sources",
     "build:vite": "vite build",
