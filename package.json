@@ -23,6 +23,10 @@
   "license": "MIT",
   "main": "src/index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darekkay/static-marks-app.git"
+  },
   "scripts": {
     "build": "run-s build:vite inline-sources",
     "build:vite": "vite build",
