@@ -28,7 +28,7 @@
 ## Build
 
 1. Update version of `app`.
-2. Run `yarn build` for `app`.
+2. Run `npm run build` for `app`.
 3. Check if `cli` changelog is up-to-date.
 4. If it's a `cli`-only change, update version in template.
 5. Make sure no CRLF line endings are used in CLI files.

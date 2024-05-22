@@ -6,6 +6,7 @@
     "import/no-unresolved": "off",
     "react/prop-types": "off",
 
+    "jsx-a11y/prefer-tag-over-role": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
