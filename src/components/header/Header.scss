@@ -26,10 +26,38 @@ header .header-inner {
   padding-right: 10px;
 }
 
-header .menu {
-  margin-left: 1rem;
+header .header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  button {
+    height: 35px;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+  }
+  .toggle-theme-btn:hover{
+    color: var(--color-text-interaction);
+  }
+  
+  .toggle-theme-btn:hover svg {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .toggle-theme-btn svg {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+  }
 }
-
 header .logo {
   display: none;
 
