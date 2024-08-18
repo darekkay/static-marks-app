@@ -23,5 +23,5 @@ createRoot(container).render(
       title={title}
       initialFilter={filter}
     />
-  </HashRouter>
+  </HashRouter>,
 );

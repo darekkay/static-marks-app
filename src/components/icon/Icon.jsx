@@ -12,7 +12,7 @@ const Icon = ({ name, position, className }) => {
         {
           [`icon-${position}`]: position,
         },
-        className
+        className,
       )}
     >
       <use xlinkHref={`#icon-${name}`} />

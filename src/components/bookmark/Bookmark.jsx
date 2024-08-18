@@ -46,7 +46,7 @@ const Bookmark = ({ title, url, notes }) => {
               <Note key={index} title={note} />
             ) : (
               <Note key={index} title={note.title} url={note.url} />
-            )
+            ),
           )}
         </div>
       )}

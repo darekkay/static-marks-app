@@ -18,7 +18,7 @@ const Collections = ({ projects, projectKey, title, currentFilter }) => {
     <div className="collections" aria-live="polite">
       {projects
         .filter(
-          (project) => projectKey === undefined || projectKey === project.key
+          (project) => projectKey === undefined || projectKey === project.key,
         )
         .map((project) =>
           project.collections.map((collection) => (
@@ -29,7 +29,7 @@ const Collections = ({ projects, projectKey, title, currentFilter }) => {
               buckets={collection.buckets}
               currentFilter={currentFilter}
             />
-          ))
+          )),
         )}
     </div>
   );

@@ -11,7 +11,7 @@ const filterLinks = (title, bucket, filter) => {
   if (!filter) return bucket.links;
 
   const words = (filter.match(wordRegex) || emptyArray).map((word) =>
-    word.toLowerCase()
+    word.toLowerCase(),
   );
   const bucketTitle = bucket.title.toLowerCase();
   return bucket.links.filter((link) =>
@@ -22,8 +22,8 @@ const filterLinks = (title, bucket, filter) => {
         link.title.toLowerCase().includes(word) ||
         link.url?.toLowerCase().includes(word) ||
         bucketTitle.includes(word) ||
-        link.notes?.some((note) => note.title.toLowerCase().includes(word))
-    )
+        link.notes?.some((note) => note.title.toLowerCase().includes(word)),
+    ),
   );
 };
 

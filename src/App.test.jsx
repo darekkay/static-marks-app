@@ -11,7 +11,7 @@ describe("App", () => {
     createRoot(div).render(
       <HashRouter>
         <App projects={[]} projectKeys={[]} />
-      </HashRouter>
+      </HashRouter>,
     );
   });
 });
