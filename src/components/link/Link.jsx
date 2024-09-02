@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Link.scss";
 
-const Link = ({ title, url, external, children }) => (
+const Link = ({ title, url, external = true, children }) => (
   // eslint-disable-next-line react/jsx-no-target-blank
   <a
     className="link"
